@@ -19,5 +19,5 @@ RUN npm run build
 # Exponha a porta correta do Vite Preview
 EXPOSE 4173
 
-# Comando para iniciar o preview do Vite
-CMD ["npm", "run", "preview"]
+# Comando para iniciar o preview do Vite com --host
+CMD ["npm", "run", "preview", "--", "--host"]
