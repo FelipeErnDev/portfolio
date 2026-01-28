@@ -16,8 +16,8 @@ COPY . .
 # Build (para projetos React/Next.js)
 RUN npm run build
 
-# Exponha a porta (ajuste conforme seu framework)
-EXPOSE 3000
+# Exponha a porta correta do Vite Preview
+EXPOSE 4173
 
-# Comando para iniciar (ajuste conforme seu framework)
-CMD ["npm", "start"]
+# Comando para iniciar o preview do Vite
+CMD ["npm", "run", "preview"]
